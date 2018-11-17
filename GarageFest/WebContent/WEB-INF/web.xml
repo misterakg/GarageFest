@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>enrich</display-name>
+  <servlet>
+    <servlet-name>MainServlet</servlet-name>
+    <servlet-class>com.dot.garagefest.MainServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddPostServlet</servlet-name>
+    <servlet-class>com.dot.garagefest.AddPostServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MainServlet</servlet-name>
+    <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddPostServlet</servlet-name>
+    <url-pattern>/addpost</url-pattern>
+  </servlet-mapping>
+</web-app>
